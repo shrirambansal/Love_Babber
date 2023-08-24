@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int a_p(int n) {
+    int ap = (3*n)+7;
+    return ap;
+}
+
+int main() {
+    int n;
+    cin >> n;
+    cout << a_p(n);
+}

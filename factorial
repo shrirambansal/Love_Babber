@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int factorial(int f) {
+    int fact = 1;
+    for(int i =1; i<=f; i++) {
+        fact = fact*i;
+    }
+    return fact;
+}
+
+int ncr(int n, int r) {
+    int denometer  = factorial(r)*factorial(n-r);
+    int Ans = factorial(n)/denometer; 
+    return Ans;
+}
+
+
+
+
+int main() {
+    int n, c;
+    cin >> n ;
+    cin >> c ;
+    int ans = ncr(n,c);
+    cout << ans;
+
+}

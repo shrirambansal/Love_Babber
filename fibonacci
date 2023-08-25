@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int fibo (int n){
+    int num1 = 0;
+    int num2 = 1;
+    int nxtnum;
+
+    if (n == 1) {
+        return num1;
+    }
+    else if (n == 2)
+    {
+        return num2;
+    }
+    else {
+    
+        for(int i=3; i<=n; i++){
+            nxtnum = num1+num2;
+            num1 = num2;
+            num2 = nxtnum;
+        }
+        return nxtnum;
+
+    }
+    
+}
+
+int main() {
+    int n;
+    cin >> n;
+    cout << fibo(n);
+}
